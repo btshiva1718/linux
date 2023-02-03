@@ -1,0 +1,112 @@
+Linux Commands
+
+Linux® is an open source operating system (OS). An operating system is the software that directly manages a system's hardware and resources, like CPU, memory, and storage.
+
+linux:It is mostly used for computer software and hardware, tablet PCS, mainframes, etc. 
+unix:It is mostly used on web servers, workstations, mainframes, and PCs but Intel, HP, etc.
+BASH: It runs on multiple OS,It can read and execute commands from a file known as a shell script. 
+1. ls-to list the contents of a directory
+2.ps- to list the running processes
+3.mpstat-provides the information about cpu performance and utilization by giving cpu statistics.
+4.ls-l -list with long format to show permissions of all the files and directories only.
+5.ls-lh - to know the size of a file.
+6.ls -a - to show all files including hidden one.
+7.ls-d :  to list directories.
+8.ls -n:  to list user id and group id of files and directories.
+ls -t : sort by time and date.
+7.ls -R - to list the directories recursively.
+8.ls-lhs- to list the files longest at the top.
+9.env-to  list all the environment variables.
+10.echo-  to print the text
+11.whoami-to know the currently logged user.
+12.sudo su- to go to root user.
+13.sudo bash-to change the currently logged user to another user.allow a user with proper permissions to execute a command as another user
+15.pwd-to know prasent working directory.
+16.ls -ltc  - last modified file will come first.
+17.ls -ltr : display the reverse o/p order by date
+17.uname -r-to  know kernel release number.
+18.uname -m- to know kernel machine type.
+19.uname -o- to know name of Operating system.
+20.cd- :to go to last working directory.
+21.cd/: it will go to root directory.
+cd~ : it will go to home path.
+21.history-will display all commands till now.
+22.mkdir- to create a directory.
+23.cd dirname-to move inside directory.
+24.rmdir directory name: to remove the directory.
+25.rm -rf directoryname: to remove directory forcefully.
+25.rm filename: to remove file.
+24.touch - to create a file.
+25.vi or cat > filename -to edit the file.
+26.cat - to see the content inside the file.
+27.head -3 filename-to see the first 10 lines of a file.
+28.tail -4 filename-to see the last 10 lines of a file.
+29.wc -l-to know the number of lines in a file.
+30.wc -w-to know the number of words in a file.
+31.wc-m- to know the number of characters in a file.
+32.sort -n filename  -to sort the contents of a file numerically.
+33.sort -u filename - to sort the contents of a file alphabetically.
+34.Grep: is used to search for a string of characters in a specified file.
+Grep -i "shiva"- it will highlet the word shiva.
+Grep a.. filename -it will highlet two letters after a.
+Grep ..a filename- it will highlet two letters before a.
+Grep -c filename-  it will show how many shiva words are there in a file.
+chmod +x filename- to give all permissions.
+cp- to copy files and directories from one directory to another.
+mv-  move files and directories from one directory to another or to rename a file or directory
+cd downloads/- to move into downloads directory.
+to kill a process: There are two commands used to kill a process: kill – Kill a process by ID. killall – Kill a process by name.
+After applying history command it will show u how many commands u have applied till now, if you want to apply 21 command we need to give !21.
+!!: it will execute last command.
+history -c : to delete the history.
+uname -a : will tell you machine name, kernel type and all.
+date: current system date ,time and zone.
+date +%d-%m-%y - it will show date month year of today.
+htop” command: It can be used to find the memory load of each process.
+“top” command: It can be used to check the usage of memory. 
+Name command that can immediately shutdown a computer running Linux: telinit 0.
+Name command that is commonly used to record sessions in Linux : script.
+
+Maximum size (in bytes) of the filename in Linux can be : 255 bytes.
+Name the directory that contains configuration files in Linux : /etc/.
+man --command in Linux is used to display the user manual of any command that we can run on
+the terminal.
+
+YUM Repository:
+Yum is a local repository for RPM package files. These packages compress available software for Linux distributions. With the repository, you can download, install and hold packages on a local disk or remotely.
+RPM : Red-hat Package Manager, is an open-source program for installing, uninstalling, and managing software packages in Linux.
+Password expiry : chage command.
+A cron job is a Linux command used for scheduling tasks to be executed sometime in the future.
+crontab -e: edits crontab entries to add, delete, or edit cron jobs.
+crontab -l: list all the cron jobs for the current user.
+scp (secure copy) command : in Linux system is used to copy file(s) between servers in a secure way.
+sorting is used to sort the contents of a file.
+cal : it will show the prasent month with date.
+
+     4 ----- stands for “read”.
+     2 ----- stands for “write”.
+     1 ----- stands for “excecutable”.
+     0 ----- stands for “no permissions”.
+Ex:
+$ Chmod 754 ST 
+  Here 7,5,4 represents the individual 7 permissions for user ,group and other peoples.
+7 --------- 4+2+1=7  all permissions (rwx).
+5 --------- 4+1=5  only read and excecutable permissions.
+4 --------- 4=4  only read permissions.
+
+-	rwx rw- r--  this is the file
+-	drwx xr- x--  this is the directory
+
+chgrp command in Linux is used to change the group ownership of a file or directory.
+What is less in Linux command?
+The less command is a Linux terminal pager that shows a file's contents one screen at a time.
+What does the more command do in Linux?
+more command is used to view the text files in the command prompt, displaying one screen at a time in case the file is large 
+It can be used to find files and directories and perform subsequent operations on them. 
+Netstat command displays various network related information such as network connections, routing tables, interface statistics, masquerade connections, multicast memberships etc.,
+sudoers:  to allocate system rights to system users.
+users: owner of a file ( person who created a file).
+group; it consists of multiple users in group so that they have same permissions.
+chmod: used to change the access mode of a file.
+chown: used to change owner of a file
+
